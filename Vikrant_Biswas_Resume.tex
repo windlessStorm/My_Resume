@@ -1,0 +1,165 @@
+%-------------------------
+% Resume in Latex
+% Author : Vikrant Biswas
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[pdftex]{hyperref}
+\usepackage{fancyhdr}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.375in}
+\addtolength{\evensidemargin}{-0.375in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[2]{
+  \item\small{
+    \textbf{#1}{: #2 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+
+\renewcommand{\labelitemii}{$\circ$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  CV STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING-----------------
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+  \textbf{\href{http://windlessstorm.github.io/}{\Large Vikrant Biswas}} & Email : \href{mailto:vikrant.biswas@gmail.com}{vikrant.biswas@gmail.com}\\
+  \href{http://windlessstorm.github.io/}{http://windlessstorm.github.io} & Mobile : +91-8123089095 \\
+  \textsc{\small Born: \small{14-June-1992}} \\
+\end{tabular*}
+
+
+%-----------EDUCATION-----------------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {West Bengal University of Technology}{Howrah, WB, India}
+      {Bachelor of Technology in Computer Science and Engineering;  CGPA: 6.45/10}{Aug. 2011 -- Sept. 2015}
+    \resumeSubheading
+      {Kendriya Vidyalaya}{ Barrackpore, WB, India}
+      {Senior Secondary School (Class 12th);  Percentage: 73.40\%}{June. 2009 -- May. 2010}
+    \resumeSubheading
+      {Kendriya Vidyalaya}{ Pathankot, PB, India}
+      {Secondary School (Class 10th);  Percentage: 79.80\%}{April. 2008 -- May. 2009}
+  \resumeSubHeadingListEnd
+
+
+%-----------EXPERIENCE-----------------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Mitel}{Bangalore, India}
+      {Software Engineer}{Aug 2017 - Present}
+    \resumeItemListStart
+        \resumeItem{Qtools}
+            {Fault tolerant python back-end for system health checks and monitoring.}
+    \resumeItemListEnd
+
+    \resumeSubheading
+      {Endurance International Group}{Bangalore, India}
+      {Hosting Product Engineer}{Dec 2016 - Aug 2017}
+      \resumeItemListStart
+        \resumeItem{Network/System Reliability}
+          {Pro-actively monitor product/services/site performance, uptime, availability and analyze logs / metrics and recommend/contribute to fixes.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {iSOKE Technologies}{Bangalore, India}
+      {Software Engineer}{Summer 2016}
+      \resumeItemListStart
+        \resumeItem{Intel DPDK}
+          {Development of framework for leveraging the power of Intel's DPDK toolkit for fast userspace packet processing.}
+        \resumeItem{Custom packet generation}
+          {C back-end for generating valid packets and streams for various L2,L3, and L4 networking protocols.}
+        \resumeItem{Quagga, Openstack}
+          {Developed auto-scaling large scale network traffic simulator using Quagga for virtual routing and linux  namespace isolation, which can simulate any kind of network topology and state.}
+    
+    \resumeItemListEnd
+
+
+  \resumeSubHeadingListEnd
+
+
+%-----------PROJECTS-----------------
+\section{Projects}
+  \resumeSubHeadingListStart
+    \resumeSubItem{Meeting assistant}
+      {Resident tray application which integrate Google cloud speech with Exchange and Google calender for managing meetings with ease.}
+    \resumeSubItem{Distributed automation server}
+      {Fault tolerant and highly available application for running day to day vital automation scripts and health checks.}
+    \resumeSubItem{All Speak}
+      {Translate voice between various languages dynamically in a live environment by leveraging Google cloud speech.}
+    \resumeSubItem{Weather Hub}
+      {Simple, lightweight and elegant weather forecast.}
+  \resumeSubHeadingListEnd
+
+
+%--------PROGRAMMING SKILLS------------
+\section{Programming Skills}
+  \resumeSubHeadingListStart
+    \item{
+      \textbf{Languages}{: Python, Javascript, C, SQL, Java}
+      }
+    \item{
+       \textbf{Technologies}{: Flask, Django, NodeJS, Selenium, GCE}
+     }
+    \item{
+       \textbf{Others}{: Linux, Wireshark, KVM, VMware ESX}
+    }
+  \resumeSubHeadingListEnd
+
+
+%-------------------------------------------
+\end{document}
