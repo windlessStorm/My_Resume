@@ -7,5 +7,5 @@ Lets make resume version controlled.
 
 Get pdf from latex:
 ```
-pdflatex sample2e.tex 
+pdflatex my_resume.tex 
 ```
